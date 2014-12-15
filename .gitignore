@@ -1,1 +1,8 @@
+# PHPUnit stuff to ignore.
+doc/
+
+# Composer files and directories
 composer.lock
+vendor/
+
+# Ignore any IDE files that are created.
