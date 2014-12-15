@@ -1,0 +1,31 @@
+{
+    "name":         "thadbryson/",
+    "description":  "",
+    "keywords":     ["library"],
+    "license":      "MIT",
+    "type":         "library",
+    "homepage":     "http://thadbryson.co/projects/",
+    "authors": [
+        {
+            "name":     "Thad Bryson",
+            "email":    "thadbry@gmail.com",
+            "homepage": "http://thadbryson.co",
+            "role":     "Author"
+        }
+    ],
+
+    "require": {
+        "php":          ">=5.4.0"
+    },
+
+    "require-dev": {
+        "mockery/mockery":      "0.9.*"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "TCB\\":        "src/",
+            "TCB\\Test\\":  "test/src/"
+        }
+    }
+}
