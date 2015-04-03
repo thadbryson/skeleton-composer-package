@@ -17,8 +17,7 @@
     "minimum-stability": "dev",
 
     "require": {
-        "php":                  ">=5.4.0",
-        "thadbryson/helper":    "*"
+        "php":                  ">=5.4.0"
     },
 
     "require-dev": {
@@ -30,20 +29,5 @@
             "TCB\\Data\\":  "src/",
             "TCB\\Test\\":  "test/src/"
         }
-    },
-
-    "repositories": [
-        {
-            "type": "package",
-            "package": {
-                "name": "thadbryson/helper",
-                "version": "master",
-                "source": {
-                    "url": "ssh://git@gitlab.thadbryson.co:57845/thadbryson/helper.git",
-                    "type": "git",
-                    "reference": "master"
-                }
-            }
-        }
-    ]
+    }
 }
