@@ -1,3 +1,6 @@
+# Go here to help you with your gitignore files.
+# https://www.gitignore.io/
+
 # PHPUnit stuff to ignore.
 doc/
 
