@@ -6,5 +6,6 @@ doc/
 
 # Composer files and directories
 vendor/
+composer.lock
 
 # Ignore any IDE files that are created.
