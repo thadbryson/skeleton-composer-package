@@ -1,10 +1,10 @@
 {
-    "name":         "thadbryson/santas-workshop-console",
-    "description":  "Console Application for Santas Workshop library.",
+    "name":         "thadbryson/",
+    "description":  "",
     "keywords":     ["library"],
     "license":      "MIT",
     "type":         "library",
-    "homepage":     "http://thadbryson.co/projects/santas-workshop-console",
+    "homepage":     "http://thadbryson.co/projects/",
     "authors": [
         {
             "name":     "Thad Bryson",
@@ -14,20 +14,20 @@
         }
     ],
 
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
 
     "require": {
-        "thadbryson/santas-workshop":     "@stable",
-        "symfony/console":                "2.6.*"
+        "php":                  ">=5.4.0"
     },
 
     "require-dev": {
-
+        "mockery/mockery":      "0.9.*"
     },
 
     "autoload": {
         "psr-4": {
-            "TCB\\SantasWorkbench\\": "src/"
+            "TCB\\Data\\":  "src/",
+            "TCB\\Test\\":  "test/src/"
         }
     }
 }
