@@ -1,10 +1,10 @@
 {
-    "name":         "thadbryson/",
-    "description":  "",
-    "keywords":     ["library"],
+    "name":         "thadbryson/composer-boilerplate",
+    "description":  "Boilerplate for creating PHP Composer projects.",
+    "keywords":     ["PHP", "Composer", "boilerplate"],
     "license":      "MIT",
     "type":         "library",
-    "homepage":     "http://thadbryson.co/projects/",
+    "homepage":     "http://thadbryson.co/projects/composer-boilerplate",
     "authors": [
         {
             "name":     "Thad Bryson",
