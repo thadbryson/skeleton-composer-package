@@ -14,28 +14,7 @@
         }
     ],
 
-    "minimum-stability": "stable",
-
     "require": {
         "php":   ">=5.6.0"
     },
-
-    "_require-recommended": {
-        "mmeyer2k/dcrypt":          "@stable",
-        "doctrine/common":          "@stable",
-        "danielstjules/stringy":    "@stable"
-    },
-
-    "require-dev": {
-        "mockery/mockery":          "@stable",
-        "fzaninotto/faker":         "@stable",
-        "codeception/codeception":  "@stable"
-    },
-
-    "autoload": {
-        "psr-4": {
-            "TCB\\MyProject\\":     "src/",
-            "TCB\\Test\\":          "test/src/"
-        }
-    }
 }
