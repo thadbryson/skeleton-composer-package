@@ -25,7 +25,8 @@
         "mmeyer2k/dcrypt":          "@stable - Encryption and decryption here.",
         "doctrine/common":          "@stable - Good stuff here. Collections, caching (Redis, Memcache, APC, Mongo, and more).",
         "danielstjules/stringy":    "@stable - Unicode for Strings.",
-        "monolog/monolog":          "@stable - For logging to files, databases, chat rooms, email, and lots of stuff."
+        "monolog/monolog":          "@stable - For logging to files, databases, chat rooms, email, and lots of stuff.",
+        "ddeboer/data-import":      "@stable - Import and export data in Array, CSV, Excel, and other formats."
     },
 
     "require-dev": {
