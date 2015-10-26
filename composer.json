@@ -1,20 +1,39 @@
 {
-    "name":         "thadbryson/composer-boilerplate",
-    "description":  "Boilerplate for creating PHP Composer projects.",
-    "keywords":     ["PHP", "Composer", "boilerplate"],
+    "name":         "anonpain/simpler",
+    "description":  "Laravel components integrated into Symfony",
+    "keywords":     ["Symfony", "Laravel", "helpers", "SOA"],
     "license":      "MIT",
     "type":         "library",
-    "homepage":     "http://thadbryson.co/projects/composer-boilerplate",
-    "authors": [
+    "_time":        "Y-m-d",
+    "_homepage":    "",
+    "_authors": [
         {
-            "name":     "Thad Bryson",
-            "email":    "thadbry@gmail.com",
-            "homepage": "http://thadbryson.co",
-            "role":     "Author"
+            "name":     "",
+            "email":    "",
+            "homepage": "",
+            "role":     ""
         }
     ],
 
+    "minimum-stability": "stable",
+
     "require": {
-        "php":   ">=5.6.0"
+        "php":                      ">=5.6.0",
+        "illuminate/console":       "5.1.*",
+        "illuminate/http":          "5.1.*",
+        "illuminate/support":       "5.1.*",
+        "illuminate/validation":    "5.1.*"
     },
+
+    "require-dev": {
+        "fzaninotto/faker":         "@stable",
+        "codeception/codeception":  "@stable"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "AnonPain\\SymLar\\":     "src/",
+            "AnonPain\\Test\\":       "tests/src/"
+        }
+    }
 }
