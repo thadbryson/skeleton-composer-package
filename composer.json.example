@@ -1,5 +1,5 @@
 {
-    "name":         "thadbryson/composer-boilerplate - That's what this project's name is.",
+    "name":         "thadbryson/{ project name here }",
     "description":  "Description of project goes here.",
     "keywords":     ["Your", "keywords", "for", "your", "project", "!"],
     "license":      "MIT",
@@ -31,17 +31,14 @@
 
     "_require-recommended": {
         "_ Begin with underscore": "makes this a comment",
-        "mmeyer2k/dcrypt":          "@stable - Encryption and decryption here.",
-        "doctrine/common":          "@stable - Good stuff here. Collections, caching (Redis, Memcache, APC, Mongo, and more).",
         "danielstjules/stringy":    "@stable - Unicode for Strings.",
-        "monolog/monolog":          "@stable - For logging to files, databases, chat rooms, email, and lots of stuff.",
-        "ddeboer/data-import":      "@stable - Import and export data in Array, CSV, Excel, and other formats."
-        "filp/whoops":              "~2.0    - Pretty error pages."
+        "monolog/monolog":          "@stable - For logging to files, databases, chat rooms, email, and lots of stuff."
     },
 
     "require-dev": {
         "fzaninotto/faker":         "@stable - Create fake data. Emails, names, addresses, numbers, and more.",
-        "codeception/codeception":  "@stable - PHPUnit on steroids."
+        "codeception/codeception":  "@stable - PHPUnit on steroids.",
+         "filp/whoops":             "~2.0    - Pretty error pages."
     },
 
     "autoload": {
