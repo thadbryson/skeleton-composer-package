@@ -1,0 +1,76 @@
+#!/bin/bash
+
+platform='unknown'
+unamestr=`uname`
+if [ -z "$DOCKER_HOST" ] && [ "$unamestr" == 'Darwin' ]; then
+    echo "This command must be run inside a docker-enabled terminal."
+    exit 1
+fi
+
+if [ $# -eq 1 ] || [ $# -eq 2 ]; then
+    if [ $1 == "start" ]; then
+        docker-compose up -d
+        exit 0
+    elif [ $1 == "restart" ]; then
+        docker-compose restart
+        exit 0
+    elif [ $1 == "stop" ]; then
+        docker-compose stop
+        exit 0
+    elif [ $1 == "ssh" ]; then
+        docker exec -u 1000 -i -t $2 bash
+        exit 0
+    elif [ $1 == "ssh-root" ]; then
+        docker exec -ti $2 bash
+        exit 0
+    elif [ $1 == "stats" ]; then
+        docker stats $(docker ps|grep -v "NAMES"|awk '{ print $NF }'|tr "\n" " ")
+        exit 0
+    elif [ $1 == "logs" ]; then
+        if [ -z "$2" ]; then
+            docker-compose logs
+        else
+            docker-compose logs | grep "${2}"
+        fi
+        exit 0
+    elif [ $1 == "clean" ]; then
+        read -r -p "This will delete your existing docker containers for this project.  Are you sure? [N/y]" response
+        if [[ $response =~ ^(yes|y) ]]; then
+            docker-compose stop
+            docker-compose -f
+        fi
+        exit 0
+    elif [ $1 == "clean-all" ]; then
+        read -r -p "This will delete all your existing docker containers AND images, including those not related to this project.  Are you sure? [N/y]" response
+        if [[ $response =~ ^(yes|y) ]]; then
+            docker stop $(docker ps -a -q)
+            docker rm $(docker ps -a -q)
+            docker rmi -f $(docker images -a -q)
+        fi
+        exit 0
+    elif [ $1 == "build" ]; then
+        docker-compose build
+        exit 0
+    fi
+fi
+
+
+echo "================================================================================"
+echo "Usage: ./dock COMMAND"
+echo
+echo "Available commands:"
+echo "  start                       starts all containers"
+echo "  stop                        stops all running containers"
+echo "  restart                     restarts all running containers"
+echo "  stats                       show stats for all running containers"
+echo "  clean                       delete project containers"
+echo "  clean-all                   delete ALL docker containers/images"
+echo "  build                       (re)builds all containers"
+echo "  push                        push built images to private registry"
+echo "  logs [CONTAINER_NAME]       shows logs for all running containers or optionally specified container"
+echo "  ssh <CONTAINER_NAME>        ssh into the specified container"
+echo "  ssh-root <CONTAINER_NAME>   ssh AS ROOT into the specified container"
+echo
+echo "Note: dock MUST be run from the root directory of the docker folder"
+echo "================================================================================"
+exit 1

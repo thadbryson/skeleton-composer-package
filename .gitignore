@@ -6,3 +6,10 @@ vendor/
 composer.lock
 
 # Ignore any IDE files that are created.
+
+
+# Ignore Code Climate files.
+.codeclimate.yml
+.csslintrc
+.eslintignore
+.eslintrc

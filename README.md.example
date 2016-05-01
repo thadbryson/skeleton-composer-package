@@ -41,7 +41,7 @@ Several quick start options are available:
 
 Read me here at the getting started page - put in a link.
 
-### What's included
+## What's included
 
 Within the download you'll find the following directories and files:
 
@@ -105,7 +105,8 @@ Keep track of development and community news.
 
 ## Versioning
 
-For transparency into our release cycle and in striving to maintain backward compatibility, this project is maintained under [the Semantic Versioning guidelines](http://semver.org/). We adhere to these rules whenever possible. Sometimes we mess up.
+For transparency into our release cycle and in striving to maintain backward compatibility, this project is maintained
+under [the Semantic Versioning guidelines](http://semver.org/). We adhere to these rules whenever possible. Sometimes we mess up.
 
 
 
@@ -118,6 +119,10 @@ For transparency into our release cycle and in striving to maintain backward com
 
 
 ## Copyright and license
+
+Here you put the license agreement for code and documentation. I don't recommend any particular license because I don't
+want to give legal advice. I'm not licensed to practice law in any state. The one I use for this project is linked
+below. The main README.md file for this project has the licenses.
 
 Code and documentation copyright 2016 Thad Bryson.
 
