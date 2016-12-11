@@ -1,9 +1,9 @@
 {
-    // Schema documentation: https://getcomposer.org/doc/04-schema.md
+    "_Schema documentation": "https://getcomposer.org/doc/04-schema.md",
 
-    // I have comments in this file. When/if it becomes your composer.json they will cause validation errors.
-    // JSON cannot have comments.
-    "_ Begin with underscore": "makes this a comment",
+    "_Begin with underscore": "makes this a comment",
+    "_1": "I have comments in this file. When/if it becomes your composer.json they will cause validation errors.",
+    "_2": "JSON cannot have comments.",
     "name":         "thadbryson/{ project name here }",
     "description":  "Description of project goes here.",
     "version":      "version number of this project.",
@@ -22,7 +22,6 @@
     ],
 
     "support": {
-        // List of where to get help for this project.
         "email":    "Email address for support.",
         "issues":   "URL to the issue tracker.",
         "forum":    "URL to the forum.",
@@ -31,20 +30,20 @@
         "source":   "URL to browse or download the sources.",
         "docs":     "URL to the documentation.",
         "rss":      "URL to the RSS feed."
-    }
+    },
 
-    // Will require stability set for downloaded projects.
+    "_3": "Will require stability set for downloaded projects.",
     "minimum-stability": "Options: dev, alpha, beta, RC, and stable",
 
-    // Composer will recommend stable projects first if it can when this is set to true.
+    "_4": "Composer will recommend stable projects first if it can when this is set to true.",
     "prefer-stable": true,
 
     "repositories": [
         {
-            // There isn't documentation on this on Composer Schema documenation.
-            // It's great though. With this you can link to another Composer project you
-            // have set on your filesystem. It doesn't download it or anything.
-            // You can link to a project that's currently in development.
+            "_5": "There isn't documentation on this on Composer Schema documenation.",
+            "_6": "It's great though. With this you can link to another Composer project you",
+            "_7": "have set on your filesystem. It doesn't download it or anything.",
+            "_8": "You can link to a project that's currently in development.",
             "type": "path",
             "url":  "../lib/my-cool-project"
         },
@@ -88,9 +87,9 @@
     ],
 
     "require": {
-        "php":   ">=5.6.0"          // Require the minimum PHP version.
+        "php":   ">=5.6.0"          "_18": "Require the minimum PHP version.
 
-        // Recommendations.
+        "_9": "Recommendations.",
         "danielstjules/stringy":    "@stable - Unicode for Strings.",
         "monolog/monolog":          "@stable - For logging to files, databases, chat rooms, email, and lots of stuff."
     },
@@ -101,74 +100,73 @@
          "filp/whoops":             "~2.0    - Pretty error pages."
     },
 
-    // List packages that conflict with yours. They will be blocked from installing.
+    "_10": "List packages that conflict with yours. They will be blocked from installing.",
     "conflict": [
-        // "package name": "versions restricted"
+        "_11": "\"package name\":\"versions restricted\"",
         "someproject/here": "<1.0 || >=1.1"
     ],
 
     "suggest": {
-        // Will suggest packages to the User.
-        // "package": "message"
+        "_12": "Will suggest packages to the User.",
+        "_13": "\"package\": \"message\"",
         "monolog/monolog":  "Allows more advanced logging of the application flow"
     },
 
-    // No example from getcomposer.org
-    "provide": ??
+    "_14": "No example from getcomposer.org",
+    "provide": "??",
 
-    // No example from getcomposer.org
-    "replace": ??
+    "_15": "No example from getcomposer.org",
+    "replace": "??",
 
     "autoload": {
         "psr-4": {
             "TCB\\-- Project code here --\\":     "src/ - You can change to your own custom namespace. Please do.",
             "TCB\\Test\\":                        "test/src/ - If you need objects for your unit testing."
         },
-        // PSR-0 is deprecated. When writing software use PSR-4.
+
+        "_16": "PSR-0 is deprecated. When writing software use PSR-4.",
         "psr-0": {
             "Monolog\\": "src/",
             "Vendor\\Namespace\\": "src/",
             "Vendor_Namespace_": "src/"
         },
         "classmap": ["src/", "lib/", "Something.php"],
-        // This is good for loading plain functions into your project.
+
+        "_17": "This is good for loading plain functions into your project.",
         "files": ["src/MyLibrary/functions.php"],
         "exclude-from-classmap": ["/Tests/", "/test/", "/tests/"]
     },
-    // This is the autoload rules for a dev environment.
+    "_18": "This is the autoload rules for a dev environment.",
     "autoload-dev": {
         "psr-4": { "MyLibrary\\Tests\\": "tests/" }
     },
 
-    // Deprecated: "include-path": ["lib/"] - adds to PHP's include_path()
-    // Deprecated: "target-dir": "Symfony/Component/Yaml" // This is for legacy PSR-0 styling.
-
-    // Configuration options.
-    // Too many to go over here. Here is a full list: https://getcomposer.org/doc/06-config.md
+    "_21": "Configuration options.",
+    "_22": "Too many to go over here. Here is a full list: https://getcomposer.org/doc/06-config.md",
     "config": {
 
     },
 
-    // Scripts docs: https://getcomposer.org/doc/articles/scripts.md
-    // These are commands that can be called with Composer commands.
-    // They don't have to interact with Composer but they can. Helper scripts for it, etc.
-    // Example: On the Symfony 3 framework after doing an update or install the cache is cleared.
-    // `./bin/console cache:clear`
+    "_23": "Scripts docs: https://getcomposer.org/doc/articles/scripts.md",
+    "_24": "These are commands that can be called with Composer commands.",
+    "_25": "They don't have to interact with Composer but they can. Helper scripts for it, etc.",
+    "_26": "Example: On the Symfony 3 framework after doing an update or install the cache is cleared.",
+    "_27": "`./bin/console cache:clear`",
     "scripts": {
 
     },
 
-    // binary scripts can be added to a project.
-    // This is a list of files to those binaries.
-    // Standard is to put them in a bin/ directory.
+    "_28": "binary scripts can be added to a project.",
+    "_29": "This is a list of files to those binaries.",
+    "_30": "Standard is to put them in a bin/ directory.",
     "bin": ["bin/my-script", "bin/my-other-script"],
 
-    // You can exclude files and paths from the package. Creating package archives.
+    "_31": "You can exclude files and paths from the package. Creating package archives.",
     "archive": {
         "exclude": ["/foo/bar", "baz", "/*.test", "!/foo/bar/baz"]
     },
 
-    // A list of regex patterns of branch names that are non-numeric (e.g. "latest" or something),
-    // that will NOT be handled as feature branches. This is an array of strings.
+    "_32": "A list of regex patterns of branch names that are non-numeric (e.g. "latest" or something),",
+    "_33": "that will NOT be handled as feature branches. This is an array of strings.",
     "non-feature-branches": ["latest-.*"]
 }

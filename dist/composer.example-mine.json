@@ -1,0 +1,35 @@
+{
+    "name":         "thadbryson/{ Project name here. }",
+    "description":  "{ Project description. }",
+    "type":         "library",
+    "license":      "MIT",
+    "authors": [
+        {
+            "name":     "Thad Bryson",
+            "email":    "thadbry@gmail.com",
+            "homepage": "http://thadbryson.co",
+            "role":     "Author"
+        }
+    ],
+
+    "minimum-stability": "dev",
+
+    "prefer-stable": true,
+
+    "repositories": [
+        {
+            "type": "path",
+            "url":  "../thadbryson/tools"
+        }
+    ],
+
+    "require": {
+        "php":   ">=7.1"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "TCB\\-- Project code here --\\":     "src/"
+        }
+    }
+}
