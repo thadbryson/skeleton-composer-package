@@ -1,14 +1,8 @@
-# Composer Boilerplate
+# Composer Boilerplate - example README
 
 ### Getting Started
 
-1. Copy this directory to a new one.
-2. Change any settings in composer.json you need.
-3. Change the Git remote origin.
-    `git remote origin remove`
-    `git remote origin add -- new origin --`
-4. Delete the composer.lock if you have one.
-5. Run `composer install`
+List steps to get my project started here.
 
 ### Below here are examples to use in your README.md file.
 

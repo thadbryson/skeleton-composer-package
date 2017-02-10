@@ -5,14 +5,15 @@ This is a template for creating Composer libraries.
 
 ## Getting Started
 
-1. Copy the `dist/` directory to a new one.
-2. Change any settings in `composer.example.json` or `composer.example-mine.json`.
-3. Change the Git remote origin. This way your new project won't be registered as this one.
+1. Copy `dist/` directory to your new project directory.
+2. Change any settings in composer.json you need.
+3. Change the Git remote origin.
     `git remote origin remove`
     `git remote origin add -- new origin --`
-4. Setup your `composer.json` file. The example file you choose will have documentation for
-settings to change.
-5. Run `composer install` to being.
+4. Delete the composer.lock if you have one.
+5. Run `composer install`
+6. Write my own README.md file?
+7. Change this file with my own TODO list?
 
 
 ## What's included in dist/
