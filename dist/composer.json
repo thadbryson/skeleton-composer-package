@@ -31,5 +31,12 @@
         "psr-4": {
             "TCB\\-- Project code here --\\":     "src/"
         }
+    },
+
+    "autoload-dev": {
+        "psr-4": {
+            "_data": "tests/_data/",
+            "_unit": "tests/_unit/"
+        }
     }
 }
