@@ -30,7 +30,11 @@
     "autoload": {
         "psr-4": {
             "TCB\\-- Project code here --\\":     "src/"
-        }
+        },
+        "files": [
+            "src-functions/call.php",
+            "src-functions/chain.php"
+        ]
     },
 
     "require-dev": {
