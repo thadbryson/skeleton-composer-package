@@ -13,18 +13,18 @@
     ],
 
     "minimum-stability": "dev",
-
     "prefer-stable": true,
 
     "repositories": [
         {
             "type": "path",
-            "url":  "../thadbryson/tools"
+            "url":  "../my-local-project-on-my-computer"
         }
     ],
 
     "require": {
-        "php":   ">=7.1"
+        "php":   ">=7.1",
+        "hirak/prestissimo { A great Composer plugin. Async downloads Composer plugins. }": "@stable"
     },
 
     "autoload": {
@@ -33,10 +33,14 @@
         }
     },
 
+    "require-dev": {
+        "codeception/codeception": "^2.3"
+    },
+
     "autoload-dev": {
         "psr-4": {
-            "_data": "tests/_data/",
-            "_unit": "tests/_unit/"
+            "_data\\": "tests/_data/",
+            "_unit\\": "tests/_unit/"
         }
     }
 }
