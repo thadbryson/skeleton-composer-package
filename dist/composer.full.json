@@ -90,6 +90,7 @@
         "php":   ">=5.6.0"          "_18": "Require the minimum PHP version.
 
         "_9": "Recommendations.",
+        "hirak/prestissimo":        "@stable - A great Composer plugin. Async downloads Composer plugins.",
         "danielstjules/stringy":    "@stable - Unicode for Strings.",
         "monolog/monolog":          "@stable - For logging to files, databases, chat rooms, email, and lots of stuff."
     },

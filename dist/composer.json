@@ -1,50 +1,31 @@
 {
-    "name":         "thadbryson/{ Project name here. }",
-    "description":  "{ Project description. }",
-    "type":         "library",
-    "license":      "MIT",
-    "authors": [
-        {
-            "name":     "Thad Bryson",
-            "email":    "thadbry@gmail.com",
-            "homepage": "http://thadbryson.co",
-            "role":     "Author"
-        }
-    ],
-
+    "name": "thadbryson/--name",
     "minimum-stability": "dev",
     "prefer-stable": true,
-
     "repositories": [
         {
             "type": "path",
-            "url":  "../my-local-project-on-my-computer"
+            "url": "../../toolkits/toolkit-exceptions"
         }
     ],
-
     "require": {
-        "php":   ">=7.1",
-        "hirak/prestissimo { A great Composer plugin. Async downloads Composer plugins. }": "@stable"
+        "php": ">=7.1",
+        "thadbryson/toolkit-exceptions": "*"
     },
-
     "autoload": {
         "psr-4": {
-            "TCB\\-- Project code here --\\":     "src/"
+            "--code\\": "src/"
         },
         "files": [
-            "src-functions/call.php",
-            "src-functions/chain.php"
+            "src-functions/functions.php"
         ]
     },
-
     "require-dev": {
         "codeception/codeception": "^2.3"
     },
-
     "autoload-dev": {
         "psr-4": {
-            "_data\\": "tests/_data/",
-            "_unit\\": "tests/_unit/"
+            "_data\\": "tests/_data/"
         }
     }
 }
