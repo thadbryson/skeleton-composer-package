@@ -1,15 +1,17 @@
 {
     "name": "thadbryson/--name",
     "minimum-stability": "dev",
+    "license": "proprietary",
     "prefer-stable": true,
     "repositories": [
         {
             "type": "path",
-            "url": "../../toolkits/toolkit-exceptions"
+            "url": "../../toolkit/toolkit-exceptions"
         }
     ],
     "require": {
         "php": ">=7.1",
+        "roave/security-advisories": "dev-master",
         "thadbryson/toolkit-exceptions": "*"
     },
     "autoload": {
