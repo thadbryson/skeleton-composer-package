@@ -1,4 +1,14 @@
 
+##
+# If you want to have a directory versioned but not its contents
+# you can use a .gitkeep file.
+/app/cache/*
+
+# But don't ignore file /app/cache/.gitkeep
+!app/cache/.gitkeep
+
+
+
 # Created by https://www.gitignore.io/api/phpstorm,composer
 
 ### PhpStorm ###

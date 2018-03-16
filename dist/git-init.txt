@@ -1,0 +1,11 @@
+
+Run following commands to initialize project:
+
+git init && \
+git add . && \
+git commit -m "init commit"
+
+Push to the origin:
+
+git remote add origin {Enter your Git repository origin path here.}
+git push -u origin master
